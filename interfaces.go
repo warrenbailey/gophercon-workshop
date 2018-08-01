@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-type User struct {
+type Users struct {
 	ID    int
 	First string
 	Last  string
@@ -16,11 +16,11 @@ type User struct {
 // example:
 //      User 1 is Rob Pike
 
-func (u User) String () string {
+func (u Users) String () string {
 	return fmt.Sprintf("User %d is %s %s", u.ID, u.First, u.Last)
 }
 
 func main() {
-	u := User{ID: 1, First: "Rob", Last: "Pike"}
+	u := Users{ID: 1, First: "Rob", Last: "Pike"}
 	fmt.Println(u)
 }
