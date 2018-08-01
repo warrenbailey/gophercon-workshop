@@ -16,7 +16,7 @@ type Movie struct {
 
 func main() {
 	// declare a variable called "movie" of type "Movie"
-	movie := Movie{}
+	movie := Movie{} // same as 'var movie Movie'
 
 	// Set the Title to "Wizard of Oz"
 	movie.Title = "Wizard of Oz"
